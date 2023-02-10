@@ -1,0 +1,1049 @@
+@import
+   url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Inter+Tight&family=Noto+Sans:wght@300&family=Open+Sans:ital,wght@0,300;1,300&family=Raleway&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro&display=swap');
+
+   @import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Inter+Tight&family=Itim&family=Noto+Sans:wght@300&family=Open+Sans:ital,wght@0,300;1,300&family=Pacifico&family=Raleway&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abyssinica SIL', serif;
+    font-family: 'Inter Tight', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* top button css */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #3C84AB;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+
+a{
+    text-decoration: none; 
+     color: white;
+}
+.container-main{
+    width: 100%;
+    /* height: 150vh; */
+    
+   
+
+}
+.second-container{
+    padding:0px 118px;
+}
+
+.section1 nav{
+    /* background-color: black; */
+    background-color:#3C84AB;
+    color: white;
+    /* height: 60px; */
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 53px;
+    font-size: 20px;
+    width: 100%;
+    overflow: hidden;
+    /* position: fixed;
+  top: 0; */
+}
+
+.logo a{
+    font-size: 25px;
+    font-family: cursive;
+    line-height: 50px;
+
+    
+
+}
+
+.menu ul{
+display: flex;
+/* padding-top: 5px; */
+
+}
+
+.menu{
+    display: flex;
+}
+
+.menu ul li  {
+    list-style: none;
+    margin: 0px 20px;
+    line-height: 50px;
+   
+   
+}
+
+.menu ul li a{
+    font-size:  22px;
+    /* text-transform: uppercase; */
+}
+.active{
+    font-weight: bold;
+}
+
+.menu-dots{
+    display: none;
+    line-height: 50px;
+} 
+.menu-list a.active, .menu-list a:hover{
+   color: rgb(0, 0, 0);
+   transition: 0.5s;
+}
+
+/* .menu .menu-list{
+    display: none;
+}
+*/
+
+/* Running Text */
+.running{
+  background-color: #ff0000;
+  color: rgb(0, 0, 0);
+  
+}
+.running marquee{
+  font-size: 20px;
+  padding: 2px;
+}
+
+
+
+
+
+/* Running Text */
+
+/* section 2 .................... */
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+ .slideshow-container {
+    max-width: 1300px;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    /* z-index: -1; */
+  }
+
+  .mySlides img{
+    height: 80vh;
+    /* border-radius: 5px; */
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* .active, .dot:hover {
+    background-color: #717171;
+  }
+   */
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+
+
+/* Responsive Ness--------->>>>>>>>>>>>>>>> */
+
+ @media screen and (max-width: 1060px) {
+    .menu ul li a{
+        font-size:  20px;
+      
+    }
+
+    
+
+} 
+
+/* <!-- section 3.......................... --> */
+
+.section3{
+    margin-top: 20px;
+/* height: 100vh; */
+
+/* background-color: #bbb; */
+/* padding: 30px; */
+}
+
+
+  
+  /* Typewriter effect 1 */
+  @keyframes typing {
+    0.0000%, 27.3488% { content: ""; }
+    1.1395%, 26.2093% { content: "N"; }
+    2.2791%, 25.0698% { content: "No"; }
+    3.4186%, 23.9302% { content: "Not"; }
+    4.5581%, 22.7907% { content: "Note"; }
+    5.6977%, 21.6512% { content: "Notes"; }
+  
+  
+    30.7674%, 51.2791% { content: ""; }
+    31.9070%, 50.1395% { content: "S"; }
+    33.0465%, 49.0000% { content: "Sy"; }
+    34.1860%, 47.8605% { content: "Syl"; }
+    35.3256%, 46.7209% { content: "Syll"; }
+    36.4651%, 45.5814% { content: "Sylla"; }
+    37.6047%, 44.4419% { content: "Syllabus"; }
+  
+    54.6977%, 75.2093% { content: ""; }
+    55.8372%, 74.0698% { content: "P"; }
+    56.9767%, 72.9302% { content: "Py"; }
+    58.1163%, 71.7907% { content: "Pyq"; }
+    59.2558%, 70.6512% { content: "Pyq'"; }
+    60.3953%, 69.5116% { content: "Pyq's"; }
+
+    78.6279%, 96.8605% { content: ""; }
+    79.7674%, 95.7209% { content: "A"; }
+    80.9070%, 94.5814% { content: "Ass"; }
+    82.0465%, 93.4419% { content: "Assign"; }
+    83.1860%, 92.3023% { content: "Assignme"; }
+    84.3256%, 91.1628% { content: "Assignment"; }
+   
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .typewriter {
+    --caret: currentcolor;
+  }
+  
+  .typewriter::before {
+    content: "";
+    animation: typing 13.5s infinite;
+  }
+  
+  .typewriter::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink 0.5s linear infinite;
+  }
+  
+  .typewriter.thick::after {
+    border-right: 1ch solid var(--caret);
+  }
+  
+  .typewriter.nocaret::after {
+    border-right: 0;
+  }
+  
+  
+  @media (prefers-reduced-motion) {
+    .typewriter::after {
+      animation: none;
+    }
+    
+    @keyframes sequencePopup {
+      0%, 100% { content: "developer"; }
+      25% { content: "writer"; }
+      50% { content: "reader"; }
+      75% { content: "human"; }
+    }
+  
+    .typewriter::before {
+      content: "developer";
+      animation: sequencePopup 12s linear infinite;
+    }
+  }
+
+  /* ----------------------------------- */
+#notes{
+    margin-bottom: 10px;
+    font-family: cursive;
+    
+}
+
+/* Running Semester text animation  */
+
+.semester {
+  position: relative;
+  animation-name: semester;
+  animation-duration: 10s;
+  animation-delay: 0s;
+}
+
+@keyframes semester {
+  0%   {left:0px; top:0px;}
+  25%  {left:100px; top:0px;}
+  50%  {left:0px; top:0px;}
+  }
+
+.tab .tablinks {
+    font-size: 20px;
+    
+}
+.tabcontent h2{
+    padding: 10px 0px 20px 0px;
+}
+
+table tr td {
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+
+.branch{
+    /* color: red; */
+  
+  font-family: 'Source Sans Pro', sans-serif;
+   cursor: not-allowed;
+
+}
+
+
+
+  /* ----------------------------------- */
+  .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    /* transform: rotate(2deg); */
+    -webkit-animation-name: rotate;
+  animation-delay: 2s;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: linear;
+  -webkit-transform-origin: 50% 0%;
+  -webkit-animation-timing-function: ease-in-out;
+  }
+
+  @-webkit-keyframes rotate {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    /* 10% {
+      -webkit-transform: rotate(10deg);
+    }
+    20% {
+      -webkit-transform: rotate(20deg);
+    }
+    30% {
+      -webkit-transform: rotate(10deg);
+    } */
+    40% {
+      -webkit-transform: rotate(1deg);
+    }
+    50% {
+      -webkit-transform: rotate(0deg);
+    }
+    60% {
+      -webkit-transform: rotate(-1deg);
+    }
+    /* 70% {
+      -webkit-transform: rotate(-10deg);
+    }
+    80% {
+      -webkit-transform: rotate(-20deg);
+    }*/
+    90% {
+      -webkit-transform: rotate(0eg);
+    } 
+    /* 100% {
+      -webkit-transform: rotate(-1deg);
+    } */
+  }
+  
+  td, th {
+    /* border: 0.2px ; */
+    text-align: left;
+    padding: 8px;
+    
+    
+  }
+
+  tr td a{
+    color: black;
+  }
+
+  tr:hover {
+    background-color: #3C84AB;
+    color: white;
+    transition: 0.5s;
+
+  }
+  
+
+  tr:hover a{
+  
+    color: white;
+    transition: 0.5s;
+
+  }
+  
+  /* tr:nth-child(even) {
+    background-color: #dddddd;
+  } */
+ 
+.upload{
+  padding: 20px;
+  text-align: center;
+  background-color: #3C84AB;
+  margin-top: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+.upload .fa-solid{
+        font-size: 92px;
+        margin: 15px 0px 0px 0px;
+        cursor: pointer;
+}
+
+/* <!-- section 3..........................End --> */
+/* <!-- section 4..........................Start --> */
+.section4{
+  /* background-color: #ccc; */
+  /* height: 100vh; */
+  margin-top: 50px;
+}
+
+.channel{
+  overflow: hidden;
+}
+
+.headss h1{
+  color: rgb(0, 0, 0);
+  text-align: left;
+  font-family:cursive;
+  padding: 15px 0px;
+ 
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  /* flex-wrap: wrap; */
+}
+
+.video iframe{
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+
+}
+
+/* <!-- section 4.........................End --> */
+
+
+
+/* <!-- section 5.........................Start --> */
+.section5{
+  /* height: 1000px; */
+  margin-top: 50px;
+
+}
+
+.purpose-text a{
+  color: black;
+}
+.purpose{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.purpose-text{
+  width: 50%;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.purpose-text::selection{
+  background-color: #3C84AB;
+  color: white;
+}
+.purpose-img{
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.purpose-img img{
+
+  border-radius: 10px;
+}
+/* <!-- section 5.........................End --> */
+
+/* <!-- section 6.........................Start --> */
+
+/* section 6 ka css likhne ka jarurat hi nhi para kyoki section 5 ke css ka use kr liya gya hain */
+
+/* <!-- section 6.........................End --> */
+/* <!-- section 7.........................start --> */
+.section7{
+  /* height: 100vh; */
+  margin-top: 30px;
+  /* background-color: grey; */
+}
+
+#contact{
+  margin-bottom: 50px;
+}
+
+.contact-left{
+  flex-basis: 35%;
+  margin-top: 16px;
+}
+
+.contact-left img{
+  flex-basis: 35%;
+  /* margin-top: 16px; */
+  border-radius: 10px;
+  height: 100%;
+}
+
+.contact-right{
+  flex-basis: 60%;
+
+}
+
+
+.btn {
+  background-color: #3C84AB;
+  
+  margin-top: 40px auto;
+   text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  padding: 10px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+.btn:hover{
+  background-color: rgb(0, 0, 0);
+  /* border: 1px solid rgb(0, 0, 0); */
+  color: #3C84AB;
+  font-weight: bold;
+}
+.contact-right form{
+  width: 100%;
+}
+
+form input, form textarea{
+  width: 100%;
+  border: 0;
+  outline: none;
+  background-color: #262626;
+  padding: 15px;
+  margin: 15px 0px;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+#msg{
+  color: green;
+  margin-top: 8px;
+  display: block;
+}
+
+/* <!-- section 7.........................End --> */
+/* <!-- section 8.........................Start --> */
+
+  /* height: 100vh; */
+  /* background-color: gray; */
+
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  padding: 20px;
+}
+
+.actives, .accordion:hover {
+  background-color: #3C84AB; 
+  color: white;
+  font-weight: bold;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #3C84AB;
+  overflow: hidden;
+  color: white;
+  padding: 15px;
+}
+
+/* <!-- section 8.........................End --> */
+/* <!-- section 9.........................Start --> */
+.footer{
+  margin-top: 100px;
+  /* background-color: gray; */
+  /* height: 50vh; */
+  display: flex;
+  justify-content: space-between;
+  background-color:#3C84AB;
+  color: white;
+  /* height: 60px; */
+  padding: 18px 53px;
+  font-size: 20px;
+  width: 100%;
+  overflow: hidden;
+  flex-wrap: wrap;
+
+}
+
+.footer .pages a{
+  color: white;
+  margin: 0px 8px;   
+  transition: 0.5s;
+}
+.footer .pages a:hover{
+color: black;
+font-weight: bold;
+}
+
+.footer .social-media i{
+  color: white;
+  margin: 0px 8px;
+  transition: 0.5s;
+}
+
+.footer .social-media i:hover{
+  color: black;
+font-weight: bold;
+}
+
+
+
+/* <!-- section 9.........................End --> */
+
+
+/* Achiece ResponsiveNess */
+
+
+@media screen and (max-width: 1476px) {
+  
+  .video iframe{
+    height: 250px;
+    width: 350px;
+    /* border-radius: 5px; */
+  
+  }
+  
+}
+ 
+   
+ @media screen and (max-width: 1343px) {
+  
+
+
+
+.video iframe{
+  height: 200px;
+  width: 300px;
+  border-radius: 5px;
+
+}
+
+}
+
+@media screen and (max-width: 1198px) {
+  
+  
+  
+  
+  
+  .second-container{
+    padding:0px 50px;
+  }
+  
+}
+
+ @media screen and (max-width: 1060px) {
+   
+  .video iframe{
+    height: 150px;
+    width: 250px;
+    border-radius: 5px;
+  
+  }
+  .purpose-text-tabs{
+  width: 100%;
+}
+
+.purpose-img-tabs{
+  display: none;
+}
+.mobile{
+  display: none;
+}
+.contact-left{
+  display: none;
+  
+}
+.contact-right{
+  flex-basis: 100%;
+  /* width: 100%; */
+  
+}
+
+ }
+ 
+ @media screen and (max-width: 897px) {
+   
+   .second-container{
+     padding:0px 20px;
+    }
+
+  }
+  
+  
+  
+  @media screen and (max-width: 842px) {
+    
+    .video iframe{
+      height: 120px;
+      width: 220px;
+      
+    }
+ }
+
+ @media screen and (max-width: 743px) {
+   
+   .second-container{
+     padding:0px 8px;
+    }
+    
+    .footer{
+      margin-top: 100px;
+      /* background-color: gray; */
+      /* height: 50vh; */
+      display: flex;
+      justify-content: space-between;
+      background-color:#3C84AB;
+      color: white;
+      /* height: 60px; */
+      padding: 18px 20px;
+      font-size: 16px;
+      width: 100%;
+      overflow: hidden;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+    .footer .pages {
+      margin-bottom: 10px;
+    }
+    
+    .footer .pages a{
+      color: white;
+      margin: 0px 10px  0px 0px;   
+      transition: 0.5s;
+      
+    }
+    
+    
+    .footer .social-media i{
+      color: white;
+      margin: 0px 10px  0px 0px; 
+      transition: 0.5s;
+    }
+    
+    
+    .footer .social-media{
+      margin-bottom: 10px;
+    }
+    
+    
+  }
+  
+  
+  @media screen and (max-width: 723px) {
+
+ .headss h1{
+  font-size: 20px;
+  margin: 0px 0px 0px 5px;
+}
+
+.headsss{
+  font-size: 20px;
+  margin: 0px 0px 0px 5px;
+}
+
+.mySlides img{
+  height: 40vh;
+  /* border-radius: 5px; */
+}
+.purpose-about{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column ;
+  
+}
+
+.purpose-text-about{
+  width: 100%;
+  
+}
+
+
+.purpose-img-about{
+  width: 100%;
+  
+}
+
+.mobile{
+  display: block;
+}
+
+}
+
+/* videos............................. */
+@media screen and (max-width: 721px) {
+  
+  
+  .row{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10px 20px; */
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin: -20px 0px;
+  }
+  
+  .video iframe{
+    
+    width: 100%;
+    height: 200px;
+    
+  }
+  .video{
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+}
+  
+
+@media screen and (max-width: 450px) {
+  
+  .section1 nav{
+    
+    
+    padding: 18px 20px;
+  }
+  
+}
+
+
+@media screen and (max-width: 550px) {
+  
+  table tr td {
+    font-size: 10px;
+    
+  }
+  table tr th {
+    font-size: 10px;
+      
+  }
+  
+}
+
+
+@media screen and (max-width: 387px) {
+  
+  table tr td {
+    font-size: 7px;
+    
+  }
+  table tr th {
+    font-size: 7px;
+    
+  }
+  
+}
+
+@media screen and (max-width: 920px) {
+
+ .logo {
+   display: block;
+   margin: auto;
+   text-align: center;
+   
+ }
+
+ .logo a{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   text-transform: uppercase;
+   letter-spacing: .2rem;
+ }
+ 
+ nav ul li{
+  display: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
